@@ -1,0 +1,11 @@
+p.title{
+    background:red;
+    color:#fff;
+    font-size:25px;
+    line-height:50px;
+    position:relative;
+}
+p.title b{
+    position:absolute;
+    left:0;
+}
