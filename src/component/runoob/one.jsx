@@ -22,6 +22,8 @@ export default class One extends Component {
     return (
         <div>
             <p className="title">One.js<b>React JSX</b></p>
+            {/* <p>路由地址：{this.props.match.url}</p> */}
+            <p>{this.props.ds}</p>
             <p className={classes.one_title}>One</p>
             {/* 需要配置webpack css-loader */}
             <h1>React JSX</h1>

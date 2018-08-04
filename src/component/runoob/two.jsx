@@ -26,11 +26,12 @@ class Url extends Component {
 function Nickname(props){
     return <h1>网站小名：{props.nickname}</h1>
 }
-export default class Website extends Component {
+export default class Two extends Component {
     render(){
         return (
             <div>
                <p className="title">Two.js<b>React 组件，复合组件</b></p>
+               {/* <p>路由地址：{this.props.match.url}</p> */}
                <Name name="菜鸟教程" />
                <Url url="http://www.runoob.com" />
                <Nickname nickname="Runoob" />

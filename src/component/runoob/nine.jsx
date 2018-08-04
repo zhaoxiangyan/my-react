@@ -6,6 +6,7 @@ export default class Nine extends Component{
         return(
             <div>
                 <p className="title">Nine.js<b>React 组件生命周期</b></p>
+                <p>路由地址：{this.props.match.url}</p>
                 <Hello name="world"/>
                 <hr/>
                 <Button/>
