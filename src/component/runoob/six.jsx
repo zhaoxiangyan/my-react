@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-
+import {Prompt} from 'react-router-dom';
 
 // React条件渲染
 export default class Six extends Component{
@@ -20,6 +20,7 @@ export default class Six extends Component{
                 <p className="title">Six.js<b>React 条件渲染</b></p>
                 <Greeting isLoggedIn={this.state.loginStatus}/>
                 <button onClick={this.switch}>切换登录状态{this.state.loginStatus?'on':'off'}</button>
+                <Prompt when={!this.state.loginStatus} message="还未注册，确定离开当前页面？" />
                 <hr/>
                 <Mailbox unreadMessages={messages}/>
                 <hr/>
