@@ -7,7 +7,7 @@ import './App.css';
 import Runoob from '../component/runoob/runoob.jsx';
 import Reactjs from '../component/react/reactjs.jsx';
 import Routerjs from '../component/router/routerjs.jsx';
-
+import Redux from '../store/store';
 
 export default class App extends Component {
   render() {
@@ -23,6 +23,7 @@ export default class App extends Component {
           <li><NavLink to="/router">React-router:</NavLink></li>
           {/* https://reacttraining.com/react-router/web/example/url-params */}
           <li><NavLink to="/react">官方教程</NavLink></li>
+          <li><NavLink to="/redux">Redux,React-Redux</NavLink></li>
         </ul>
         <Switch>
           <Route path="/runoob" component={Runoob} />
@@ -30,6 +31,7 @@ export default class App extends Component {
         </Switch>
         <Route path="/router" component={Routerjs}/>
         <Route path="/react" component={Reactjs}/>
+        <Route path="/redux" component={Redux}/>
       </div>
       </BrowserRouter>
     );
